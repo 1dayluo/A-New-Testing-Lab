@@ -1,0 +1,53 @@
+<!--
+ * @Author: 1dayluo
+ * @Date: 2022-10-27 10:58:03
+ * @LastEditors: 1dayluo
+ * @LastEditTime: 2022-11-01 11:37:34
+ * @Description: meow~Always coding for fun!
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind XXE</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../app/lib/angular.min.js"></script>
+    <script src="../app/lab2.js"></script>
+  </head>
+<body class="bg-sky-200" ng-app="lab2">
+    <header ng-include="'../header.html'"></header>
+    <div class="flex justify-center py-20" ng-controller="lab2_controller"> <!--upload file start-->
+        <div class="bg-white  shadow-lg items-center py-20 px-5   rounded-lg ">
+            <div class="float-left bg-cyan-500  rounded-xl border-2 text-white">  <!--part1 start-->          
+                <label class=" text-xl text-bold px-2">Input</label>
+            </div>
+            <br />
+            <div class="rounded-xl px-2   text-grep-800 py-10 border-2 border-blue-300 ">
+                <form class="flex-row g:grid-cols-4" ng-submit="upload()">
+                    <input class="bg-gray-50 rounded-lg border-2 border-gray-600 hover:border-pink-400" type="text" name="myfile" ng-model="file"/>
+                    <button class="text-zinc-50 bg-blue-900 hover:bg-red-500 rounded-xl px-8">Enter</button>        
+                </form>
+
+            </div> 
+                                                      <!--part1 end-->
+            <!--Output-->
+            <div class="py-10" ng-repeat="output in outputs |filter:output">
+                <div class="float-left bg-cyan-500  rounded-xl border-2 text-white">            
+                    <label class=" text-xl text-bold px-2">Output</label>
+                </div>
+                <br />
+                <div class="rounded-xl px-2  rounded-xl text-grep-800 py-10 border-2 border-blue-300">
+                    {{output}}
+                </div> 
+            </div>
+  
+            <!--output end-->
+        </div>
+
+    </div><!--upload file end-->
+
+
+</body>
+</html>

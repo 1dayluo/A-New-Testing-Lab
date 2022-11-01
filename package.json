@@ -1,0 +1,11 @@
+{
+  "name": "testinglab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/style.css -o public/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

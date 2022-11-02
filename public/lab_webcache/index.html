@@ -1,0 +1,37 @@
+<!--
+ * @Author: 1dayluo
+ * @Date: 2022-11-01 16:47:27
+ * @LastEditors: 1dayluo
+ * @LastEditTime: 2022-11-02 11:18:33
+ * @Description: meow~Always coding for fun!
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Cache Poisoning Lab</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../app/lib/angular.min.js"></script>
+    <script src="../app/lab3.js"></script>
+
+</head>
+<body  ng-app="lab3"> 
+    <header ng-include="'../header.html'"></header>
+    <div  class="text-gray-30 flex justify-center items-center grid-cols-1" >
+        <div class="px-10 py-20 shadow-xl m-15" ng-init="initheader()" ng-controller="lab_wcachep">
+            <h1 class="card text-4xl flex-col">Web Cache Testing Demo</h1>
+            <img class="scale-75 opacity-10 animate-pulse" src="../img/akl.jpg" alt="" srcset="">
+            <div class="m-3 flex justify-center items-center ">
+                    <a href>
+                        <button ng-click="run()" class="px-3 py-1 text-white rounded-l bg-gray-500">Cache Web Now </button>
+                        
+                    </a>
+                   
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

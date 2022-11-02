@@ -1,22 +1,16 @@
 # A New Testing Lab Intro
 
-测试LAB 只开发了基础框架
+A simple sample for a lab (~~maybe can be a framework for lab in the future~~)
 
-后续可以根据需求在此基础上开发成一个完成的靶场
+## Tech
 
-P.S:所用到的图片均为网上他人用AI以"hacker"为关键词生成的图片
+- Frontend: angularjs & tailwind css
 
-## 技术栈
+- Backend: php
 
-- CSS: tailwind css
+- deploy: docker
 
-- 前端: angularjs
-
-- 后端: php
-
-- 部署: docker
-
-## docker部署
+## Docker
 
 ```shell
 docker build -t lab-app .
@@ -24,12 +18,24 @@ docker build -t lab-app .
 
 
 
-## 展示
+## Show
 
-首页
+Home
 
 ![](assets/2022-10-28-10-23-14-image.png)
 
 blind xxe
 
 ![](/home/koui/.config/marktext/images/2022-10-27-12-04-35-image.png)
+
+Linux local file include
+
+![](assets/2022-11-01-17-25-08-image.png)
+
+Web Cache Poisoning
+
+(仅用于测试,我想现实中的缓存投毒的demo不是这样的)
+
+![](assets/2022-11-01-21-09-50-image.png)
+
+
